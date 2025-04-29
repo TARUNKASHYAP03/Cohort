@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Task 11 - Form, Video, and Canvas</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <h1>Task 11</h1>
+
+  <!-- Form -->
+  <form>
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" required><br><br>
+
+    <label for="dob">Date of Birth:</label>
+    <input type="date" id="dob" name="dob"><br><br>
+
+    <label for="color">Favorite Color:</label>
+    <input type="color" id="color" name="color"><br><br>
+  </form>
+
+  <!-- Embedded Video -->
+  <video width="400" controls autoplay poster="https://via.placeholder.com/400x200.png?text=Video+Poster">
+    <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
+    <track src="https://www.w3schools.com/html/mov_bbb_subtitles.vtt" kind="subtitles" srclang="en" label="English">
+    Your browser does not support the video tag.
+  </video>
+
+  <br><br>
+
+  <!-- Canvas -->
+  <canvas id="myCanvas" width="200" height="100"></canvas>
+  <script>
+    const canvas = document.getElementById('myCanvas');
+    const ctx = canvas.getContext('2d');
+    ctx.fillStyle = "blue";
+    ctx.fillRect(10, 10, 150, 75);
+  </script>
+</body>
+</html>

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Simple Webpage</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        display: grid;
+        grid-template-areas:
+          "header header"
+          "main aside"
+          "footer footer";
+        grid-template-columns: 3fr 1fr;
+        gap: 10px;
+        padding: 10px;
+      }
+      header {
+        grid-area: header;
+        background-color: #f0f0f0;
+        padding: 10px;
+      }
+      nav ul {
+        list-style: none;
+        padding: 0;
+        display: flex;
+        gap: 15px;
+      }
+      main {
+        grid-area: main;
+        background-color: #fdfdfd;
+        padding: 10px;
+      }
+      aside {
+        grid-area: aside;
+        background-color: #f9f9f9;
+        padding: 10px;
+      }
+      footer {
+        grid-area: footer;
+        background-color: #ddd;
+        text-align: center;
+        padding: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Header Section -->
+    <header>
+      <h1>My Blog Website</h1>
+      <nav aria-label="Main Navigation">
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Articles</a></li>
+          <li><a href="#">About</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- Main Content Section -->
+    <main>
+      <section>
+        <h2>Latest Post</h2>
+        <article>
+          <header>
+            <h3>Why HTML Semantics Matter</h3>
+            <p><em>Posted on April 29, 2025</em></p>
+          </header>
+          <p>
+            Semantic HTML helps screen readers and search engines understand the
+            content better.
+          </p>
+          <footer>
+            <p>Written by Tarun</p>
+          </footer>
+        </article>
+      </section>
+    </main>
+
+    <!-- Sidebar -->
+    <aside>
+      <h3>Related Links</h3>
+      <ul>
+        <li><a href="#">HTML Basics</a></li>
+        <li><a href="#">Semantic Elements</a></li>
+        <li><a href="#">Accessibility Tips</a></li>
+      </ul>
+    </aside>
+
+    <!-- Footer Section -->
+    <footer>
+      <p>&copy; 2025 Tarun's Blog. All rights reserved.</p>
+    </footer>
+  </body>
+</html>

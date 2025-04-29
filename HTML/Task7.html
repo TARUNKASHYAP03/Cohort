@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form with Phone Number</title>
+    <style>
+      form {
+        background-color: #f0f8ff;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+        width: 300px;
+        height: 300px;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        font-family: Arial, sans-serif;
+      }
+
+      input,
+      textarea {
+        padding: 10px;
+        font-size: 16px;
+        border-radius: 5px;
+        border: 1px solid #ddd;
+      }
+
+      button {
+        padding: 10px;
+        font-size: 16px;
+        background-color: #4caf50;
+        color: white;
+        border: none;
+        cursor: pointer;
+      }
+
+      button:hover {
+        background-color: #45a049;
+      }
+    </style>
+  </head>
+  <body>
+    <form action="">
+      <!-- Phone Number Field with pattern validation (accepts 10 digits) -->
+      <label for="phone">Phone Number</label>
+      <input
+        type="tel"
+        name="phone"
+        id="phone"
+        pattern="[0-9]{10}"
+        placeholder="Enter 10-digit phone number"
+        required
+      />
+
+      <!-- Message Textarea -->
+      <label for="message">Message</label>
+      <textarea
+        name="message"
+        id="message"
+        placeholder="Enter additional comments"
+      ></textarea>
+
+      <!-- Password Field -->
+      <label for="password">Password</label>
+      <input
+        type="password"
+        name="password"
+        id="password"
+        minlength="8"
+        required
+        placeholder="At least 8 characters"
+      />
+
+      <!-- Submit Button -->
+      <button type="submit">Submit</button>
+    </form>
+  </body>
+</html>
