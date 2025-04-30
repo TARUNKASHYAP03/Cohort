@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Weather App UI</title>
+  <link rel="stylesheet" href="style.css" />
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+  />
+</head>
+<body>
+  <div class="container">
+    <h1>Weather App</h1>
+    
+    <section class="current-weather">
+      <h2><i class="fas fa-sun" aria-hidden="true"></i> 32<sup>°C</sup> | Mumbai</h2>
+      <p class="hi-low">H: 34<sup>°</sup> L: 28<sup>°</sup> • Sunny</p>
+    </section>
+    
+    <section class="forecast">
+      <ul>
+        <li><span>Mon</span> <i class="fas fa-cloud-sun" aria-hidden="true"></i> 31°</li>
+        <li><span>Tue</span> <i class="fas fa-cloud-bolt" aria-hidden="true"></i> 29°</li>
+        <li><span>Wed</span> <i class="fas fa-cloud-rain" aria-hidden="true"></i> 27°</li>
+        <li><span>Thu</span> <i class="fas fa-bolt" aria-hidden="true"></i> 30°</li>
+      </ul>
+    </section>
+    
+    <div class="search">
+      <input 
+        type="text" 
+        class="search-input" 
+        placeholder="Search for a city..."
+        aria-label="Search for a city"
+      >
+      <button class="search-btn" aria-label="Search">
+        <i class="fas fa-search" aria-hidden="true"></i>
+      </button>
+    </div>
+  </div>
+</body>
+</html>
